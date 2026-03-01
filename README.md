@@ -1,15 +1,15 @@
 
 ```markdown
-# Mini-Vuln-Scanner
+Mini-Vuln-Scanner
 
-**Mini-Vuln-Scanner** is a lightweight, educational, command-line Python tool designed to help security enthusiasts and developers identify common web vulnerabilities on websites they **own** or have **explicit permission** to test.
+Mini-Vuln-Scanner is a lightweight, educational, command-line Python tool designed to help security enthusiasts and developers identify common web vulnerabilities on websites they own or have explicit permission to test.
 
-**Important Disclaimer**  
-This tool is **strictly for educational purposes and authorized security testing only**.  
-Unauthorized scanning of any website is **illegal** in most jurisdictions (including under India's IT Act, CFAA, Computer Misuse Act, etc.).  
-The author assumes **no responsibility** for any misuse of this tool.
+Important Disclaimer 
+This tool is strictly for educational purposes and authorized security testing only.  
+Unauthorized scanning of any website is illegal in most jurisdictions (including under India's IT Act, CFAA, Computer Misuse Act, etc.).  
+The author assumes no responsibility for any misuse of this tool.
 
-## Features
+Features
 
 - Non-destructive detection of:
   - Reflected Cross-Site Scripting (XSS)
@@ -23,7 +23,7 @@ The author assumes **no responsibility** for any misuse of this tool.
 - Optional text/JSON report generation
 - Modular & extensible check system
 
-## Requirements
+Requirements
 
 - Python 3.8+
 - Dependencies:
