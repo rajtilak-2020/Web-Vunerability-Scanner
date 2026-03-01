@@ -1,15 +1,14 @@
-
-```markdown
-Mini-Vuln-Scanner
+# Mini-Vuln-Scanner
 
 Mini-Vuln-Scanner is a lightweight, educational, command-line Python tool designed to help security enthusiasts and developers identify common web vulnerabilities on websites they own or have explicit permission to test.
 
-Important Disclaimer 
+### Important Disclaimer
+
 This tool is strictly for educational purposes and authorized security testing only.  
 Unauthorized scanning of any website is illegal in most jurisdictions (including under India's IT Act, CFAA, Computer Misuse Act, etc.).  
 The author assumes no responsibility for any misuse of this tool.
 
-Features
+### Features
 
 - Non-destructive detection of:
   - Reflected Cross-Site Scripting (XSS)
@@ -23,7 +22,7 @@ Features
 - Optional text/JSON report generation
 - Modular & extensible check system
 
-Requirements
+### Requirements
 
 - Python 3.8+
 - Dependencies:
@@ -31,7 +30,7 @@ Requirements
   pip install requests beautifulsoup4 colorama
   ```
 
-Installation
+### Installation
 
 1. Clone or download the repository:
 
@@ -48,7 +47,7 @@ Installation
 
    (If you don't have a `requirements.txt` yet, just run the pip command above.)
 
-Usage
+### Usage
 
 ```bash
 python scanner.py --url https://example.com [options]
@@ -89,7 +88,7 @@ Expected flags:
 - Respect `robots.txt` and rate limits to avoid being blocked or causing issues.
 - Never use this tool against production sites without authorization.
 
-Project Structure
+## Project Structure
 
 ```
 mini-vuln-scanner/
@@ -101,35 +100,10 @@ mini-vuln-scanner/
 └── README.md
 ```
 
-Limitations
+## Limitations
 
 - Currently detects **reflected** XSS only (no stored/DOM-based)
 - SQLi detection is **error-based** only (no blind/time-based)
 - CSRF check is heuristic (looks for common token names)
 - No JavaScript rendering / DOM XSS detection
 - Basic crawler — does not handle heavy JavaScript sites well
-
-Contributing
-
-Contributions welcome!  
-Feel free to open issues or pull requests for:
-- New safe vulnerability checks
-- Better error handling
-- Improved reporting
-- Support for more security headers
-
-License
-
-MIT License (or choose whatever license you prefer)
-
-Use responsibly. Stay ethical
-
-```
-
-You can now:
-
-1. Create or replace `README.md` in your project root
-2. Paste the content above
-3. Adjust any personal details (GitHub link, name, etc.) if you want
-
-Let me know if you'd like to add sections like screenshots, future roadmap, or make it shorter/longer!
